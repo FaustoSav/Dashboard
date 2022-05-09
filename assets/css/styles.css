@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .card{
+        @apply   mx-auto max-w-xs bg-dark-blue_card rounded h-40 flex flex-col justify-center items-center shadow-new  hover:cursor-pointer hover:brightness-110 md:w-52  md:h-48 md:min-w-card_min_width;
+    }
+    
+    .card-first-child{
+        @apply w-full flex justify-center items-center  mb-3;
+    }
+    .social-img{
+        @apply w-4 h-4 mr-1 md:w-6 md:h-6 ;
+    }
+    .social-name{
+        @apply text-xxs text-dark-text_blue font-bold md:text-xs;
+    }
+
+    .card-second-child{
+        @apply flex flex-col justify-center items-center mb-3;
+    }
+    .number-big{
+        @apply text-dark-text_white text-4xl font-bold;
+    }
+    .followers{
+        @apply uppercase text-xxs tracking-big text-dark-text_blue md:text-sm;
+    }
+    
+
+    .overview-card{
+        @apply hover:cursor-pointer  hover:brightness-110 mx-auto max-w-xs flex flex-row justify-between bg-dark-blue_card rounded h-24 py-5 px-4 md:w-52 md:h-32 md:min-w-card_min_width;
+    }
+}
